@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack --env development",
+    "build": "webpack --env production"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-js-plugin": "0.0.4",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "style-loader": "^1.0.0",
